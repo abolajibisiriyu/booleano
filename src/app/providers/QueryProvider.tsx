@@ -7,9 +7,8 @@ interface Props {
   queryConfig?: any;
 }
 const QueryProvider: React.FC<Props> = (props) => {
-  const queryClient = React.useMemo(() => new QueryClient(props.queryConfig), [
-    props.queryConfig,
-  ]);
+  const queryClient = new QueryClient(props.queryConfig);
+  
   return (
     <QueryClientProvider client={queryClient}>
       {props.children}
