@@ -1,10 +1,11 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
+import RoutesContainer from "app/components/RoutesContainer";
 import { routes } from "./routes";
 
 export default function Routes() {
   return (
-    <Router>
+    <RoutesContainer>
       <Switch>
         {routes.map((route) => (
           <Route
@@ -15,6 +16,6 @@ export default function Routes() {
           />
         ))}
       </Switch>
-    </Router>
+    </RoutesContainer>
   );
 }

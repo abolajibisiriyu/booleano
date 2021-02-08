@@ -1,10 +1,11 @@
+import { BrowserRouter as Router } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 
-import QuestionsProvider from "./providers/QuestionsProvider";
-import QueryProvider from "./providers/QueryProvider";
+import QuestionsProvider from "app/providers/QuestionsProvider";
+import QueryProvider from "app/providers/QueryProvider";
 
-import Routes from "./routes";
+import Routes from "app/routes";
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
           hideProgressBar={true}
           position="bottom-center"
         />
-        <Routes />
+        <Router>
+          <Routes />
+        </Router>
       </QueryProvider>
     </QuestionsProvider>
   );

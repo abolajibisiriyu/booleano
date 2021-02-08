@@ -1,19 +1,24 @@
+import { Question } from "app/api/questions/types";
 import * as React from "react";
 
 import { DispatchAction } from "./types";
 
-export type QuestionsContextType = {
-  questions?: any[];
-};
-
-const INITIAL_STATE = { questions: undefined };
-
-export const QuestionsContext = React.createContext<QuestionsContextType>({});
-
 export const QuestionsActions = {
   SET_QUESTIONS: "SET_QUESTIONS",
   CLEAR_QUESTIONS: "CLEAR_QUESTIONS",
+  //
+  SET_ANSWERS: "SET_ANSWERS",
+  CLEAR_ANSWERS: "CLEAR_ANSWERS",
 };
+
+export type QuestionsContextType = {
+  questions?: Question[];
+  answers?: string[];
+};
+
+const INITIAL_STATE = { questions: undefined, answers: undefined };
+
+export const QuestionsContext = React.createContext<QuestionsContextType>({});
 
 function reducer(state: QuestionsContextType, action: DispatchAction) {
   switch (action.type) {
@@ -21,6 +26,12 @@ function reducer(state: QuestionsContextType, action: DispatchAction) {
       return { ...state, questions: action.payload };
     case QuestionsActions.CLEAR_QUESTIONS:
       return { ...state, questions: undefined };
+    //
+    case QuestionsActions.SET_ANSWERS:
+      return { ...state, answers: action.payload };
+    case QuestionsActions.CLEAR_ANSWERS:
+      return { ...state, answers: undefined };
+    //
     default:
       throw new Error();
   }

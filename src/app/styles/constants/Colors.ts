@@ -1,18 +1,24 @@
+// Colors from https://flatuicolors.com/palette/es
+
 const Colors = {
   // Blue
-  Blue100: "#5F1877",
+  Blue100: "#2c2c54",
+
+  //PURPLE
+  PURPLE: "#706fd3",
 
   // Black
   Black100: "#000000",
-  Black90: "#1F2933",
 
   // White
   White100: "#ffffff",
+  SWAN_WHITE: "#f7f1e3",
 
-  // Grey
-  Grey200: "#E2E2E2",
-  Grey40: "#7B8794",
-  Grey10: "#F5F7FA",
+  // GREEN
+  CELESTIAL_GREEN: "#33d9b2",
+
+  // ORANGE
+  SYNTHETIC_PUMPKIN: "#ff793f",
 };
 
 export default Colors;

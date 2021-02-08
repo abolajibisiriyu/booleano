@@ -52,42 +52,29 @@ export default css`
 
   #root {
     min-height: 100vh;
-    /* height: 100%; */
+    height: 100%;
     width: 100%;
-  }
-
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-      monospace;
-  }
-
-  input[type="number"] {
-    -moz-appearance: textfield;
-  }
-  input[type="number"]::-webkit-inner-spin-button,
-  input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
   }
 
   .Toastify__toast-container.toast__container,
   .Toastify__toast.toast__toast,
   .Toastify__toast-body.toast__body {
-    font-family: "Aribau-Grotesk";
+    font-family: "Comfortaa";
     padding: 0px;
     margin: 0;
     border-radius: 4px;
-    width: unset;
+    width: 100%;
   }
 
   .Toastify__toast-container.toast__container,
   .Toastify__toast-body.toast__body {
-    width: unset;
+    width: 100%;
     max-width: 400px;
     right: 0;
   }
   .Toastify__toast.toast__toast {
     margin-bottom: 1rem;
+    background-color: transparent;
   }
 
   .Toastify__toast.toast__toast {

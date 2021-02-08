@@ -6,6 +6,7 @@ interface Props {
   semiBold?: boolean;
   big?: boolean;
   large?: boolean;
+  huge?: boolean;
 }
 
 const H2 = styled.h2<Props>`
@@ -31,6 +32,13 @@ const H2 = styled.h2<Props>`
     css`
       /* 48px */
       font-size: 2.4rem;
+    `};
+
+  ${(props) =>
+    props.huge &&
+    css`
+      /* 60px */
+      font-size: 3rem;
     `};
 
   ${(props) =>
