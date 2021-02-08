@@ -10,8 +10,8 @@ export default function Quiz() {
   if (!questions) return null;
 
   return (
-    <QuizContainer>
-      <P className="question-index">
+    <QuizContainer data-testid="quiz-page">
+      <P className="question-index" data-testid="question-index">
         Question {activeQuestionIndex + 1}/<span>{questions.length}</span>
       </P>
       <ProgressBar

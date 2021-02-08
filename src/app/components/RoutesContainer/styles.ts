@@ -1,9 +1,10 @@
 import styled from "@emotion/styled";
 
 export const RoutesContainerBox = styled.section`
+  position: relative;
   width: 100%;
-  min-height: 100vh;
-  height: 100%;
+  /* min-height: 100vh; */
+  height: 100vh;
 
   background-color: #2c2c54;
   color: white;

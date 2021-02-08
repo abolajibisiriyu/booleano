@@ -10,9 +10,9 @@ export default function Results() {
   if (!questions || !answers) return null;
 
   return (
-    <ResultsContainer>
+    <ResultsContainer data-testid="results-page">
       <P>You scored</P>
-      <P className="score">
+      <P className="score" data-testid="user-score">
         <span>{correctAnswers}</span>/{questions.length}
       </P>
       <QuestionsResultList questions={questions} answers={answers} />

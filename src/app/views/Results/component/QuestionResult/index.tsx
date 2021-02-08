@@ -17,7 +17,7 @@ const QuestionResult: React.FC<Props> = (props) => {
   const Icon = question.correct_answer === answer ? CorrectIcon : WrongIcon;
 
   return (
-    <QuestionResultContainer>
+    <QuestionResultContainer data-testid="question-result">
       <Icon />
       <P>{he.decode(question.question)}</P>
     </QuestionResultContainer>

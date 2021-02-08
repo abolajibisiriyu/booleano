@@ -15,7 +15,7 @@ export interface NotificationComponentProps
 const Notification: React.FC<NotificationComponentProps> = (props) => {
   const { message, closeToast, variant } = props;
   return (
-    <NotificationContainer {...{ variant }}>
+    <NotificationContainer {...{ variant }} data-testid="notification">
       <P small>{message}</P>
       <button type="button" title="close notification" onClick={closeToast}>
         <CloseIcon />
