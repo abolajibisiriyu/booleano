@@ -38,7 +38,7 @@ yarn test
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-The tests are in the `test` folders, collocated with the page or component being tested.
+The tests are in the `test` folders, with the files prefixed with `*.test.tsx`, collocated with the page or component being tested.
 
 &nbsp;
 
