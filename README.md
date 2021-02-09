@@ -10,7 +10,7 @@ At its core it uses :
 - React context for state management.
 - [Emotion](https://emotion.sh/) for writing styles.
 - [Jest](https://jestjs.io/) and [React testing library](https://testing-library.com/docs/react-testing-library/intro) for testing.
-
+- Uses [MSW](https://mswjs.io/) "Mock service worker" as a mock server for testing.
 
 &nbsp;
 
