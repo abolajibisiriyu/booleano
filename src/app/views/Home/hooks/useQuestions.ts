@@ -54,6 +54,7 @@ export default function useQuestions() {
     }
   }, [error, questions, history]);
 
+  // clear query cache on cleanup
   React.useEffect(() => {
     return () => {
       queryClient.removeQueries("questions");
